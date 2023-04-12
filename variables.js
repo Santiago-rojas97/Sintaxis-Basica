@@ -17,3 +17,39 @@ let nombre= "santiago";
 let edad = 26;
 
 console.log(nombre,edad);
+
+const numero=10;
+let suma=numero+10
+console.log(numero,suma);
+
+let x=1,l=4;
+sum=++x;
+console.log(x)
+
+sum=l++;
+console.log(l)
+console.log(sum)
+
+let a=0;
+let v =0;
+let summ=a/v;
+console.log(summ)
+
+const array = [1, 2, 3, 4, 5]
+
+array.forEach((element) => {
+  console.log(element)
+})
+
+//creamos un array de 1000 números
+const arg = Array.from({ length: 1000 }, (_, i) => i)
+
+// creamos un nuevo array con los números pares
+let newArray = []
+
+// con for
+for (let i = 0; i < array.length; i++) {
+  if (arg[i] % 2 === 0) {
+    newArray.push(arg[i])
+  }
+}
