@@ -27,11 +27,12 @@ console.log("Variable música despues del bloque:", musica)
 */
 var nombre= "Santi";
 var edad= 26;
+console.log("variable global antes de bloque",edad);
 {
-    let nombre="Pablo";
+    var nombre="Pablo";
     let edad=28;
-    console.log("variable locales ejemplo:",nombre);
-    console.log("variable nombre despues de bloque:",edad);
+    console.log("variable local nombre en bloque:",nombre);
+    console.log("variable edad en bloque:",edad);
 
     
 }
