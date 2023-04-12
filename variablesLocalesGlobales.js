@@ -2,7 +2,7 @@
     -let se usa para ambito de bloque o local.
     -var se usa para ambitos globales
 El ambito de bloque de manera sencilla es todo lo que esta encerrado por corchetes {}.
-*/
+
 
 //Definición variable global
 var pelicula="Interestelar"
@@ -24,3 +24,34 @@ console.log("Variable música antes del bloque:", musica)
 
 console.log("Variable película despues del bloque:", pelicula)
 console.log("Variable música despues del bloque:", musica)
+*/
+var nombre= "Santi";
+var edad= 26;
+{
+    let nombre="Pablo";
+    let edad=28;
+    console.log("variable locales ejemplo:",nombre);
+    console.log("variable nombre despues de bloque:",edad);
+
+    
+}
+
+console.log("variable nombre despues de bloque:",nombre);
+console.log("variable nombre despues de bloque:",edad);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
