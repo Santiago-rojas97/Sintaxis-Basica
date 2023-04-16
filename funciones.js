@@ -43,7 +43,7 @@ function resta (numeroUno, nuemroDos){
     
 console.log (resultadoResta);
 
-
+/*
 
 const dolarCop = function (a) {
 
@@ -72,19 +72,14 @@ console.log(`La conversión de dolar a pesos colombiano es: $${convertirDolarCop
 
 
 
-const convertPesosADollars = (pesos) => {
-const rateChange = 4570;
-const dollars = pesos / rateChange;
-return dollars.toFixed(2);
-}
-            
-            
-console.log(convertPesosADollars(5000));
+
+*/
+
 
 function Suma(a,b){
     return a+b;
 }
-function Resta(a,b){
+function resta(a,b){
     return a-b;
 }
 function multiplicacion(a,b) {
@@ -92,9 +87,90 @@ function multiplicacion(a,b) {
     
 }
 function division(a,b) {
-    return a/b;
+    let c;
+    if (b==0)
+        c="error by zero";
+    else
+        c=a/b
+    return c;
+    
 }
-let s=10;
-let s2=5;
-let resul=s+s2;
-console.log(resul);
+
+
+let a=10;
+let b=50;
+
+let op= "Suma";
+
+switch (op){
+    case "Suma":
+        console.log(Suma(a,b))
+        break;
+    case "resta":
+        console.log(resta(a,b))
+        break;
+    case "division":
+        console.log(division(a,b))
+        break;
+    case "multiplicacion":
+        console.log(multiplicacion(a,b))
+    default:
+        break;
+}
+
+
+
+const convertPesosADollars = (pesos) => {
+    const rateChange = 4570;
+    const dollars = pesos / rateChange;
+    return dollars.toFixed(2);
+  }
+  
+  
+  console.log(convertPesosADollars(5000));
+
+  function cuadrado(d,f) {
+    return d+f;
+    
+  }
+  function triangulo(a,b) {
+    return (a*b)/2;
+    
+  }
+  function areaCirculo(radio){
+    const PI = 3.14159;
+    return PI*radio**2;
+  }
+let ladoa=15
+let ladob=10
+
+radio=24;
+
+console.log(`el área de un cuadrado cuyos ladon miden ${ladoa} y ${ladob} es: ${cuadrado(ladoa,ladob)}`)
+console.log(`el área de un cicurlo cuyo radio es ${radio} es ${areaCirculo(radio)}`);
+console.log(`E área de un triangulo cuya base mide ${ladoa} y su altura es ${ladob} es ${triangulo(ladoa,ladob)}`)
+
+
+//Función expresada o anonima
+const funcionExpresada= function(){
+    return console.log("Hola mundo");
+
+}
+funcionExpresada();
+
+//funciones anonimas autoejecutables
+//se ejecutan al momento de crearlas
+(function(){
+    console.log("Mi primera funcion anonima autoejecutada")
+
+})();
+
+(function(d){
+    d.log("Mi segunda funcion anonima autoejecutable con parametros")
+})(console);
+
+(function(f){
+    
+    f.log("prueba")
+}
+)(console)
