@@ -76,22 +76,24 @@ else {
     console.log("Error");
 }
 */
-let cont=0;
+let cont=1;
 let multi=7;
-/*La variable cont aumenta en uno. Sigue siempre y cuando el contador sea menor que 10*/
 
 while(cont<10){
     cont++;
     multiplicacion=multi*cont;
-    console.log(`Tablas de multiplicacion del numero 7: 7 x ${cont} = ${multiplicacion}`)
+    console.log(`
+    7:  x ${cont} = ${multiplicacion}`)
 }
 
 let resultad=0;
-for (let f = 0; f <= 5; f++) {
+for (let f = 1; f <= 5; f++) {
     resultad +=f;
     console.log(`f es ${f} y resultado es ${resultad}`)
     console.log(`resultado actual es ${resultad}`)
 }
+
+
 let parcial=5.5;
 let = parseFloat = parcial_final= 5.5;
 let =parseFloat = promedio=(parcial+parcial_final)/2;
@@ -103,14 +105,3 @@ if (promedio >= 6.0) {
     
 }
 
-function miPrimerFuncion (){
-for (let f = 0; f <= 10; f++) {
-    console.log(f);
-    if (f %2==0) {
-     console.log(f);   
-    }
-    
-}
-return
-}
-miPrimerFuncion();
