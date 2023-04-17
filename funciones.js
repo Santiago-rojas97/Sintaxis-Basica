@@ -129,6 +129,8 @@ const convertPesosADollars = (pesos) => {
   
   console.log(convertPesosADollars(5000));
 
+
+
   function cuadrado(d,f) {
     return d+f;
     
@@ -138,25 +140,25 @@ const convertPesosADollars = (pesos) => {
     
   }
   function areaCirculo(radio){
-    const PI = 3.14159;
-    return PI*radio**2;
+    return Math.PI*radio**2;
   }
-let ladoa=15
+let ladoa=14
 let ladob=10
 
-radio=24;
+let radio=24;
 
 console.log(`el área de un cuadrado cuyos ladon miden ${ladoa} y ${ladob} es: ${cuadrado(ladoa,ladob)}`)
 console.log(`el área de un cicurlo cuyo radio es ${radio} es ${areaCirculo(radio)}`);
 console.log(`E área de un triangulo cuya base mide ${ladoa} y su altura es ${ladob} es ${triangulo(ladoa,ladob)}`)
 
-
 //Función expresada o anonima
-const funcionExpresada= function(){
+
+/*const funcionExpresada= function(){
     return console.log("Hola mundo");
 
 }
 funcionExpresada();
+
 
 //funciones anonimas autoejecutables
 //se ejecutan al momento de crearlas
@@ -165,12 +167,41 @@ funcionExpresada();
 
 })();
 
-(function(d){
-    d.log("Mi segunda funcion anonima autoejecutable con parametros")
-})(console);
+*/
 
-(function(f){
-    
-    f.log("prueba")
+//Ejemplo de función expresada con parametros
+const funcionExpresada= function(a,b){
+    if (a>b){
+        return 1;
+    }    
+    else if (a<b){
+        return -1;
+    }else{  
+        return 0;
+    }
 }
-)(console)
+console.log(funcionExpresada(6,5));
+
+
+//Ejemplo de funcion expresada autoejecutable
+(function(numero) {
+    if (numero % 2 == 0){
+        console.log (`${numero} es par`);
+    
+    }
+    else{
+      console.log (`${numero} es impar`);
+
+    }
+
+  })(27);
+//con funcion flecha
+  ((num) => {
+    if (num % 2 === 0) {
+      console.log(`${num} es un número par.`);
+    } else {
+      console.log(`${num} es un número impar.`);
+    }
+  })(47);
+  
+  

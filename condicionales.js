@@ -76,7 +76,7 @@ else {
     console.log("Error");
 }
 */
-let cont=1;
+let cont=0;
 let multi=7;
 
 while(cont<10){
@@ -89,7 +89,7 @@ while(cont<10){
 let resultad=0;
 for (let f = 1; f <= 5; f++) {
     resultad +=f;
-    console.log(`f es ${f} y resultado es ${resultad}`)
+    //console.log(`f es ${f} y resultado es ${resultad}`)
     console.log(`resultado actual es ${resultad}`)
 }
 
