@@ -16,10 +16,7 @@ function miPrimerFuncion (){
     }
     Saludar("Santiago",7);
 
-    let colors = ['red', 'green', 'blue']
-    for (let i = 0; i < colors.length; i++) {
-      console.log(colors[i])
-    }
+    
 let n1=10;
 let n2=5;
 

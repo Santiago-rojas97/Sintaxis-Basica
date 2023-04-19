@@ -22,8 +22,11 @@ console.log(coches);
 const peliculas=['la milla verde','parásitos','el viaje de chihiro','coco','interstellar'];
 
 for (let i = 0; i < peliculas.length; i++) {
-console.log(`Pelicula(${i}):${peliculas[i]}`)    
-}0
+console.log(`Pelicula(${i}):${peliculas[i]}`) 
+
+}
+
+
 //“Película #posicion+1: nombrePelicula”
 
 /*
@@ -37,13 +40,13 @@ for (let index = 100; index < a.length; index=+2) {
     console.log(a)
 }*/
 let numeros = [];
-for (let i = 0; i <= 100; i ++) {
+for (let i = 0; i <= 10; i ++) {
      numeros.push(i);
 }
 console.log(numeros)
 
 /*
-var pares = [''];
+var pares = [];
 for ( pares=0; pares<=100; pares=pares +1 *2) {
       console.log( pares);
 }
@@ -60,5 +63,12 @@ let arr = [ 70, 1, 5, 20 ];
 function comparar ( a, b ){
      return a - b;
  }
-arr.sort(comparar);  // [ 1, 5, 40, 200 ]
-console.log(arr);
+ arr.sort(comparar);  // [ 1, 5, 40, 200 ]
+ console.log(arr);
+ 
+ 
+ const rr=[] 
+ //copiar un array con .slice()
+ const copiarr =arr.slice();
+ console.log(copiarr)
+
