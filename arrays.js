@@ -72,3 +72,8 @@ function comparar ( a, b ){
  const copiarr =arr.slice();
  console.log(copiarr)
 
+const flecha =(a,b)=>{
+    return a-b;
+
+}
+console.log(flecha(1,5))
