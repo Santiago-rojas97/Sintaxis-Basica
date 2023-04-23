@@ -76,23 +76,21 @@ switch (op) {
     default:
         break;
 }
-let contt = 0
+let contt = 0;
 const cont = [];
-for (let index = 0; index < 5; index++) {
+for (let index = 0; index <= 5; index++) {
     contt += index;
     if (index % 2 == 0) {
         console.log(`numero par ${index}`)
     } else {
         console.log(`Impar ${index}`)
     }
-    cont.push(index);
     console.log(`${contt}`)
 
 
 
 }
 console.log(`Resultado de toda la suma es ${contt}`)
-console.log(cont);
 
 const arreglos = [];
 for (let i = 0; i <= 10; i += 2) {
@@ -173,7 +171,6 @@ function ejercicio(){
     const arreglo=[1,3,4,5,5,6,2,7,3,5,7];
 
     const otroArreglo = [...new Set(arreglo)];
-    console.log(otroArreglo);
     return otroArreglo.sort((x,y)=> {
         return x-y;
     });
