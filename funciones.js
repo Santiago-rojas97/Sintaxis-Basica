@@ -32,13 +32,7 @@ const saludo= function (){
 console.log (saludo());
 */
 
-let resultadoResta = resta (40,7);
 
-function resta (numeroUno, nuemroDos){
-    return numeroUno - nuemroDos;
-}
-    
-console.log (resultadoResta);
 
 /*
 

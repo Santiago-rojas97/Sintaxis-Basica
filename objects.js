@@ -1,53 +1,11 @@
-/*
-class Animal{
-    constructor (nombre,edad){
-    this.nombre = nombre;
-    this.edad = edad;
 
 
-    }
-    saludar(){
-        return `Hola soy un animal y me llamo ${this.nombre}`
-    }
-    
-
-    
-}
-class Gato extends Animal{
-    constructor(nombre,edad,color){
-        super(nombre,edad)
-        this.color = color;
-    }
-    saludar(){
-        return `Soy un michi,me llamo ${this.nombre} y hago MIAUW`;
-    }
-}
-
-class Vaca extends Animal{
-    constructor(nombre,edad,tipo){
-    super(nombre,edad);
-    this.tipo = tipo
-    }
-    saludar(){
-        return `Soy una vaca me llamo ${this.nombre} y hago MUUUUU`
-    }
-}
-
-let perro= new Animal("Bambi",5);
-console.log(perro.nombre,perro.edad,perro.saludar());
-let gato= new Gato("Botas",3,"Gris")
-console.log(gato.nombre)
-console.log(gato.saludar());
-let cow = new Vaca("Lola",10,"lechera");
-console.log(cow.nombre,cow.saludar(),cow.tipo)
-
-*/
-
+//Clases,Declaramos la clase Figura
 class Figura{
-    constructor(color){
-        this.color = color;
+    constructor(color){//Constructor
+        this.color = color;//Atributos o propiedades
     }
-    saludar(){//Metodo
+    saludar(){//Metodos
         return `Hola! Soy una figura y mi color es ${this.color}`
     }
     area(){
@@ -58,7 +16,7 @@ class Figura{
 
 
 class Cuadradp extends Figura{//Creando una Subclase
-    constructor(color,alto,ancho){
+    constructor(color,alto,ancho){//Heredamos los atributos (color)de la clase figura y creamos unso propios(alto,ancho)
         super(color,alto,ancho);//Herencia
         this.alto = alto;
         this.ancho =ancho;
