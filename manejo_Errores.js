@@ -49,7 +49,7 @@ function dora(num1, num2, operador) {
     }
   }
   
-  console.log(dora(-5, 3, "√")); 
+  console.log(dora(0, 5, "√")); 
   console.log(dora(45, 0, "/")); 
   console.log(dora(5, 2,"+"));
   console.log(dora(5, 2,"^"));
