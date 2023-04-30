@@ -78,20 +78,20 @@ function multiplicacion(a,b) {
     
 }
 function division(a,b) {
-    let c;
+
     if (b==0)
-        c="error by zero";
+        return "error by zero";
     else
-        c=a/b
-    return c;
+       return a/b
+    
     
 }
 
 
 let a=10;
-let b=50;
+let b=0;
 
-let op= "Suma";
+let op= "division";
 
 switch (op){
     case "Suma":
