@@ -80,6 +80,8 @@ $figure2.innerHTML = `
 
 $imagenes.appendChild($figure2);//Al elemento padre imagenes se le agrega el elemento hijo nuevo figure2
 
+
+
 //Creando elementos 
 
 const estaciones = ["Primavera", "Verano", "Otoño", "Invierno"],
@@ -104,7 +106,7 @@ Las posiciones son:
   -afterbegin(primer nodo)
   -beforeend(ultimo nodo)
   -afterend(nodo siguiente)
-*/
+*/  
 
 const $selectorImagenes = document.querySelector(".imagenes"),
   $nuevaImagen = document.createElement("figure");
