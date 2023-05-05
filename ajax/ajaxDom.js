@@ -26,9 +26,18 @@ ajax.addEventListener("readystatechange", (e) => {
     console.log(ajax.responseText)
     console.log("-----------URL----------")
     console.log(` ${ajax.responseURL}`)
+    if (ajax.status === 200){
+        console.log("respuesta correcta")
+    }else if(ajax.status === 404){
+        console.log("no encontrado.")
+    }else if (ajax.status === 505){
+        console.log("error interno del servidor")
+    }else{
+        console.log("error desconocido")
+    }
 });
 
 /*Abre la petición con el método GET.*/
-ajax.open("GET", "https://jsonplaceholder.typicode.com/posts/26");
+ajax.open("GET", "https://jsonplaceholder.typicode.com/comments/63  ");
 /*envia la peticioN*/
 ajax.send();
