@@ -2,7 +2,7 @@ const coches = ['BMW', 'Mercedes Benz', 'Volvo'];
 console.log(coches);
 
 /*
-Recorrer Arreglos
+Recorrer Arreglos con un ciclo For
 */
 
 
@@ -39,6 +39,10 @@ console.log(a.length)
 for (let index = 100; index < a.length; index=+2) {
     console.log(a)
 }*/
+
+//Creamo un arreglo vacio [] y con un ciclo For lo recorremos.
+//despues utilizamos el metdo (push) para agregar uno a uno los elementos del array,hasta 10
+
 let numeros = [];
 for (let i = 0; i <= 10; i ++) {
      numeros.push(i);
@@ -51,7 +55,7 @@ for ( pares=0; pares<=100; pares=pares +1 *2) {
       console.log( pares);
 }
 */
-let arr1 = [ 40, 1, 5 ];
+let arr1 = [ 40, 1, 5,45,78];
 arr1.sort((a,b)=>a-b);  // [ 1, 5, 40, 200 ]
 
 console.log(arr1) 
