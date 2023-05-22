@@ -1,3 +1,6 @@
+//creamos la clase *persona*
+//le damos atributos*nombre,edad, altura*
+
 class Persona{
     constructor(nombre,edad,altura){
         this.nombre = nombre;
